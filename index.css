@@ -1,0 +1,119 @@
+@font-face {
+    font-family: dsdigi;
+    src: url("./DS-DIGI.TTF");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dsdigi, "sans-serif";
+}
+
+body{
+    background-color: #3c3c3c;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    width: 750px;
+    height: 500px;
+
+    border-radius: 20px;
+
+    background-color: #1e1e1e;
+
+    border: 2px solid rgb(16, 16, 16);
+
+    padding: 1.5% 0px;
+}
+
+.monitor{
+    width: 90%;
+    height: 75%;
+
+    background-color: black;
+
+    margin: auto;
+    padding: 10px 0px;
+
+    position: relative;
+}
+
+.flag{
+    width: 60px;
+    height: 40px;
+
+    position: absolute;
+    /* top, left, bottom, rigth */
+    top: 8px;
+    left: 9px;
+
+    border-radius: 5px;
+}
+
+.buttons{
+    width: 90%;
+    height: 25%;
+
+   /* background: green;*/
+
+    margin: 10px auto;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button:hover{
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+.buttons button{
+    font-size: 2rem;
+    min-width: 100px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 50px;
+
+    transition: background-color 200ms ease-in-out 0s;
+}
+
+.time{
+    width: 90%;
+    height: 70%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4rem;
+    letter-spacing: 1rem;
+
+    color: rgb(30, 195, 30);
+}
+
+.info{
+    width: 90%;
+    height: 30%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color: rgb(30, 195, 30);
+    gap: 0.6rem;
+}
